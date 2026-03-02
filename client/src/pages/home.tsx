@@ -40,31 +40,33 @@ export default function Home() {
       className="min-h-screen transition-colors duration-1000 ease-in-out font-sans flex flex-col" 
       style={{ backgroundColor: bgColor }}
     >
-      {/* Menu Bar */}
-      <nav className="flex items-center justify-between px-6 md:px-12 py-4 backdrop-blur-md bg-black/5 border-b border-black/10 sticky top-0 z-10">
-        <div className="flex items-center gap-8">
-          <Link href="/">
-            <img 
-              ref={imgRef}
-              src={logoUrl} 
-              alt="Gary's Blog Logo" 
-              className="h-14 w-auto rounded shadow-sm hover:scale-105 transition-transform cursor-pointer"
-              onLoad={extractColor}
-              crossOrigin="anonymous" 
-            />
-          </Link>
-          <div className="hidden md:flex gap-8 text-black/70 font-semibold tracking-wide">
-            <Link href="/" className="hover:text-black transition-colors">Home</Link>
-            <Link href="/" className="hover:text-black transition-colors">My Students</Link>
-            <Link href="/" className="hover:text-black transition-colors">About Gary</Link>
+      {/* Floating Menu Bar */}
+      <div className="sticky top-6 z-50 w-full px-6 flex justify-center">
+        <nav className="flex items-center justify-between w-full max-w-5xl px-6 md:px-10 py-3 backdrop-blur-xl bg-white/30 border border-white/40 shadow-2xl shadow-black/5 rounded-full">
+          <div className="flex items-center gap-8">
+            <Link href="/">
+              <img 
+                ref={imgRef}
+                src={logoUrl} 
+                alt="Gary's Blog Logo" 
+                className="h-12 w-auto rounded-full shadow-sm hover:scale-105 transition-transform cursor-pointer border border-white/20"
+                onLoad={extractColor}
+                crossOrigin="anonymous" 
+              />
+            </Link>
+            <div className="hidden md:flex gap-8 text-black/70 font-bold tracking-tight text-sm uppercase">
+              <Link href="/" className="hover:text-black transition-colors">Home</Link>
+              <Link href="/" className="hover:text-black transition-colors">My Students</Link>
+              <Link href="/" className="hover:text-black transition-colors">About Gary</Link>
+            </div>
           </div>
-        </div>
-        <div className="flex gap-4">
-          <button className="px-6 py-2.5 bg-black/80 hover:bg-black text-white font-medium rounded-full transition-all hover:shadow-lg shadow-black/20">
-            Subscribe
-          </button>
-        </div>
-      </nav>
+          <div className="flex gap-4">
+            <button className="px-5 py-2 bg-black text-white text-sm font-bold rounded-full transition-all hover:scale-105 hover:shadow-xl active:scale-95">
+              Subscribe
+            </button>
+          </div>
+        </nav>
+      </div>
 
       {/* Main Content */}
       <main className="flex-1 max-w-5xl mx-auto w-full px-6 py-20 flex flex-col items-center">
