@@ -5,39 +5,13 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 export default function Home() {
-  // We use a fallback color just in case, but it will update based on the image
-  const [bgColor, setBgColor] = useState<string>("#F5CB72"); 
+  // Use the exact color from the logo background
+  const bgColor = "#F5CB72"; 
   const imgRef = useRef<HTMLImageElement>(null);
-
-  // Extract background color dynamically from the top-left pixel
-  const extractColor = () => {
-    const img = imgRef.current;
-    if (!img) return;
-
-    const canvas = document.createElement("canvas");
-    canvas.width = img.width;
-    canvas.height = img.height;
-    const ctx = canvas.getContext("2d", { willReadFrequently: true });
-    if (!ctx) return;
-
-    try {
-      ctx.drawImage(img, 0, 0, img.width, img.height);
-      // Get pixel data from a corner (e.g., 5, 5 to avoid anti-aliasing artifacts at the very edge)
-      const pixelData = ctx.getImageData(5, 5, 1, 1).data;
-      const hex = rgbToHex(pixelData[0], pixelData[1], pixelData[2]);
-      setBgColor(hex);
-    } catch (e) {
-      console.error("Could not extract color from image", e);
-    }
-  };
-
-  const rgbToHex = (r: number, g: number, b: number) => {
-    return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
-  };
 
   return (
     <div 
-      className="min-h-screen transition-colors duration-1000 ease-in-out font-sans flex flex-col" 
+      className="min-h-screen font-sans flex flex-col" 
       style={{ backgroundColor: bgColor }}
     >
       {/* Floating Menu Bar */}
@@ -50,7 +24,6 @@ export default function Home() {
                 src={logoUrl} 
                 alt="Gary's Blog Logo" 
                 className="h-12 w-auto rounded-full shadow-sm hover:scale-105 transition-transform cursor-pointer border border-white/20"
-                onLoad={extractColor}
                 crossOrigin="anonymous" 
               />
             </Link>
