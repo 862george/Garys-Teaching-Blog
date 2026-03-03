@@ -23,7 +23,7 @@ export default function Home() {
                 ref={imgRef}
                 src={logoUrl} 
                 alt="Gary's Blog Logo" 
-                className="h-12 w-auto rounded-full shadow-sm hover:scale-105 transition-transform cursor-pointer border border-white/20"
+                className="h-12 w-auto hover:scale-105 transition-transform cursor-pointer mix-blend-multiply"
                 crossOrigin="anonymous" 
               />
             </Link>
@@ -32,11 +32,6 @@ export default function Home() {
               <Link href="/" className="hover:text-black transition-colors">My Students</Link>
               <Link href="/" className="hover:text-black transition-colors">About Gary</Link>
             </div>
-          </div>
-          <div className="flex gap-4">
-            <button className="px-5 py-2 bg-black text-white text-sm font-bold rounded-full transition-all hover:scale-105 hover:shadow-xl active:scale-95">
-              Subscribe
-            </button>
           </div>
         </nav>
       </div>
