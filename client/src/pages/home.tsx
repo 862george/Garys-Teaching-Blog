@@ -40,7 +40,7 @@ export default function Home() {
       <main className="flex-1 max-w-5xl mx-auto w-full px-6 py-20 flex flex-col items-center">
         <header className="text-center mb-24 space-y-6 animate-in slide-in-from-bottom-8 duration-700 fade-in">
           <h1 className="text-6xl md:text-8xl font-black tracking-tight text-black/90 drop-shadow-sm" style={{ fontFamily: "'Playfair Display', serif" }}>
-            garys.blog
+            Gary's blog
           </h1>
           <p className="text-xl md:text-2xl text-black/70 max-w-2xl mx-auto leading-relaxed font-medium">
             Musings of a teaching assistant navigating the wonderful world of education, featuring my absolute favorite students.
