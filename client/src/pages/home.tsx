@@ -23,7 +23,7 @@ export default function Home() {
                 ref={imgRef}
                 src={logoUrl} 
                 alt="Gary's Blog Logo" 
-                className="h-12 w-auto hover:scale-105 transition-transform cursor-pointer mix-blend-multiply"
+                className="h-12 w-auto hover:scale-105 transition-transform cursor-pointer mix-blend-multiply rounded-xl"
                 crossOrigin="anonymous" 
               />
             </Link>
