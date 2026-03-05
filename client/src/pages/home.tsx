@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import logoUrl from "@assets/IMG_1944_1772453843447.jpeg";
+import logoUrl from "@assets/IMG_1949_1772693894306.jpeg";
 import { useEffect, useRef, useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
