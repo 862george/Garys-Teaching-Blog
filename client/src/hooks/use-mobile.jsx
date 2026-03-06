@@ -1,4 +1,4 @@
-import *  from "react"
+import * as as  from "react"
 
 const MOBILE_BREAKPOINT = 768
 

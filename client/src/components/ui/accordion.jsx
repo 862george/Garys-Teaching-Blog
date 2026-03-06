@@ -1,8 +1,8 @@
-import *  from "react"
-import * Primitive from "@radix-ui/react-accordion"
+import *   from "react"
+import *   from "@radix-ui/react-accordion"
 import { ChevronDown } from "lucide-react"
 
-import { cn } from "@/lib/utils"
+import { cn } from "../lib/utils"
 
 const Accordion = AccordionPrimitive.Root
 

@@ -8,9 +8,8 @@ import Home from "./pages/home";
 
 function Router() {
   return (
-    
+    <Switch>
       <Route path="/" component={Home}/>
-      {/* Fallback to 404 */}
       <Route component={NotFound} />
     </Switch>
   );
@@ -19,7 +18,7 @@ function Router() {
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      
+      <TooltipProvider>
         <Toaster />
         <Router />
       </TooltipProvider>

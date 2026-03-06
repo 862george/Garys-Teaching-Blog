@@ -1,7 +1,7 @@
-import *  from "react"
-import * CardPrimitive from "@radix-ui/react-hover-card"
+import *   from "react"
+import *   from "@radix-ui/react-hover-card"
 
-import { cn } from "@/lib/utils"
+import { cn } from "../lib/utils"
 
 const HoverCard = HoverCardPrimitive.Root
 

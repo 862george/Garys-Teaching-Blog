@@ -1,7 +1,7 @@
-import *  from "react"
-import * Primitive from "recharts"
+import *   from "react"
+import *   from "recharts"
 
-import { cn } from "@/lib/utils"
+import { cn } from "../lib/utils"
 
 // Format{ THEME_NAMESS_SELECTOR }
 const THEMES = { light"", dark".dark" } 

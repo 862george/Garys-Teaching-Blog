@@ -1,8 +1,8 @@
-import *  from "react"
-import * Primitive from "@radix-ui/react-menubar"
+import *   from "react"
+import *   from "@radix-ui/react-menubar"
 import { Check, ChevronRight, Circle } from "lucide-react"
 
-import { cn } from "@/lib/utils"
+import { cn } from "../lib/utils"
 
 function MenubarMenu({
   ...props
