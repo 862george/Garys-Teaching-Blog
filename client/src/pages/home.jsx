@@ -1,5 +1,4 @@
 import { Link } from "wouter";
-import logoUrl from "../../attached_assets/IMG_1949_1772693894306.jpeg";
 import { useEffect, useRef, useState } from "react";
 import { Card, CardContent } from "../components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "../components/ui/avatar";
@@ -19,7 +18,7 @@ export default function Home() {
             <Link href="/">
               <img 
                 ref={imgRef}
-                src={logoUrl} 
+                src="/logo.jpeg" 
                 alt="Gary's Blog Logo" 
                 className="h-12 w-auto hover:scale-105 transition-transform cursor-pointer mix-blend-multiply rounded-xl"
                 crossOrigin="anonymous" 
@@ -52,7 +51,7 @@ export default function Home() {
                   <div className="absolute inset-0 bg-blue-400 rounded-full blur-md opacity-50 group-hover:opacity-80 transition-opacity"></div>
                   <Avatar className="h-20 w-20 border-4 border-white shadow-md relative">
                     <AvatarImage src="https://api.dicebear.com/7.x/avataaars/svg?seed=Adam&backgroundColor=b6e3f4" />
-                    <AvatarFallback><AvatarFallback>AD</AvatarFallback>
+                    <AvatarFallback>AD</AvatarFallback>
                   </Avatar>
                 </div>
                 <div>
@@ -73,7 +72,7 @@ export default function Home() {
                   <div className="absolute inset-0 bg-purple-400 rounded-full blur-md opacity-50 group-hover:opacity-80 transition-opacity"></div>
                   <Avatar className="h-20 w-20 border-4 border-white shadow-md relative">
                     <AvatarImage src="https://api.dicebear.com/7.x/avataaars/svg?seed=George&backgroundColor=c0aede" />
-                    <AvatarFallback><AvatarFallback>GE</AvatarFallback>
+                    <AvatarFallback>GE</AvatarFallback>
                   </Avatar>
                 </div>
                 <div>
