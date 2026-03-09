@@ -14,22 +14,15 @@ export default function Home() {
     >
       <div className="sticky top-6 z-50 w-full px-6 flex justify-center">
         <nav className="flex items-center justify-between w-full max-w-5xl px-6 md:px-10 py-3 backdrop-blur-xl bg-white/30 border border-white/40 shadow-2xl shadow-black/5 rounded-full">
-          <div className="flex items-center gap-8">
-            <Link href="/">
-              <img 
-                ref={imgRef}
-                src="/logo.jpeg" 
-                alt="Gary's Blog Logo" 
-                className="h-12 w-auto hover:scale-105 transition-transform cursor-pointer mix-blend-multiply rounded-xl"
-                crossOrigin="anonymous" 
-              />
-            </Link>
-            <div className="hidden md:flex gap-8 text-black/70 font-bold tracking-tight text-sm uppercase">
-              <Link href="/" className="hover:text-black transition-colors">Home</Link>
-              <Link href="/" className="hover:text-black transition-colors">My Students</Link>
-              <Link href="/" className="hover:text-black transition-colors">About Gary</Link>
-            </div>
-          </div>
+          <Link href="/">
+            <img 
+              ref={imgRef}
+              src="/logo.jpeg" 
+              alt="Gary's Blog Logo" 
+              className="h-12 w-auto hover:scale-105 transition-transform cursor-pointer mix-blend-multiply rounded-xl"
+              crossOrigin="anonymous" 
+            />
+          </Link>
         </nav>
       </div>
 
